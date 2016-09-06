@@ -23,24 +23,24 @@
 /* Begin PBXFileReference section */
 		03BC477DA9B757110F54540B /* Pods-ImageGrabber2016.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGrabber2016.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageGrabber2016/Pods-ImageGrabber2016.release.xcconfig"; sourceTree = "<group>"; };
 		2CC4B09B1D7E64BE00516D3E /* ImageGrabber2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageGrabber2016.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CC4B09F1D7E64BE00516D3E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2CC4B0A11D7E64BE00516D3E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2CC4B0A21D7E64BE00516D3E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2CC4B0A41D7E64BE00516D3E /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
-		2CC4B0A51D7E64BE00516D3E /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		2CC4B09F1D7E64BE00516D3E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2CC4B0A11D7E64BE00516D3E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		2CC4B0A21D7E64BE00516D3E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2CC4B0A41D7E64BE00516D3E /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = WebViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		2CC4B0A51D7E64BE00516D3E /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = WebViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		2CC4B0A81D7E64BE00516D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CC4B0AA1D7E64BE00516D3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CC4B0AD1D7E64BE00516D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2CC4B0AF1D7E64BE00516D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2CC4B0BB1D7E6DC500516D3E /* ImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageInfo.h; sourceTree = "<group>"; };
-		2CC4B0BC1D7E6DC500516D3E /* ImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageInfo.m; sourceTree = "<group>"; };
-		2CC4B0BE1D7E6EFE00516D3E /* ImageGrabber2016-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ImageGrabber2016-prefix.pch"; path = "ImageGrabber2016/ImageGrabber2016-prefix.pch"; sourceTree = "<group>"; };
-		2CC4B0BF1D7E705200516D3E /* ImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageManager.h; sourceTree = "<group>"; };
-		2CC4B0C01D7E705200516D3E /* ImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageManager.m; sourceTree = "<group>"; };
-		2CC4B0CA1D7E737100516D3E /* ImageListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageListViewController.h; sourceTree = "<group>"; };
-		2CC4B0CB1D7E737100516D3E /* ImageListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageListViewController.m; sourceTree = "<group>"; };
-		2CC4B0CD1D7E7AB400516D3E /* ImageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDetailViewController.h; sourceTree = "<group>"; };
-		2CC4B0CE1D7E7AB400516D3E /* ImageDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDetailViewController.m; sourceTree = "<group>"; };
+		2CC4B0AF1D7E64BE00516D3E /* ImageGrabber2016-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ImageGrabber2016-Info.plist"; sourceTree = "<group>"; };
+		2CC4B0BB1D7E6DC500516D3E /* ImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ImageInfo.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		2CC4B0BC1D7E6DC500516D3E /* ImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ImageInfo.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2CC4B0BE1D7E6EFE00516D3E /* ImageGrabber2016-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "ImageGrabber2016-prefix.pch"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2CC4B0BF1D7E705200516D3E /* ImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ImageManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		2CC4B0C01D7E705200516D3E /* ImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ImageManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2CC4B0CA1D7E737100516D3E /* ImageListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ImageListViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		2CC4B0CB1D7E737100516D3E /* ImageListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ImageListViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		2CC4B0CD1D7E7AB400516D3E /* ImageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ImageDetailViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		2CC4B0CE1D7E7AB400516D3E /* ImageDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ImageDetailViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		B9DB20C5546070A88DBF18C9 /* Pods-ImageGrabber2016.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGrabber2016.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageGrabber2016/Pods-ImageGrabber2016.debug.xcconfig"; sourceTree = "<group>"; };
 		E7ED0325DA65B7CCFEB0966F /* libPods-ImageGrabber2016.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ImageGrabber2016.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -70,7 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				2CC4B09D1D7E64BE00516D3E /* ImageGrabber2016 */,
-				2CC4B0BE1D7E6EFE00516D3E /* ImageGrabber2016-prefix.pch */,
 				2CC4B09C1D7E64BE00516D3E /* Products */,
 				24C0CE2A07D5D48A0695C3AE /* Pods */,
 				EC3A8C85CC8B1056D9C69595 /* Frameworks */,
@@ -103,7 +102,6 @@
 				2CC4B0A71D7E64BE00516D3E /* Main.storyboard */,
 				2CC4B0AA1D7E64BE00516D3E /* Assets.xcassets */,
 				2CC4B0AC1D7E64BE00516D3E /* LaunchScreen.storyboard */,
-				2CC4B0AF1D7E64BE00516D3E /* Info.plist */,
 				2CC4B09E1D7E64BE00516D3E /* Supporting Files */,
 			);
 			path = ImageGrabber2016;
@@ -112,6 +110,8 @@
 		2CC4B09E1D7E64BE00516D3E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2CC4B0AF1D7E64BE00516D3E /* ImageGrabber2016-Info.plist */,
+				2CC4B0BE1D7E6EFE00516D3E /* ImageGrabber2016-prefix.pch */,
 				2CC4B09F1D7E64BE00516D3E /* main.m */,
 			);
 			name = "Supporting Files";
