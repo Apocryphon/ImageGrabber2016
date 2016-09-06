@@ -9,23 +9,40 @@
 /* Begin PBXBuildFile section */
 		2CC4B0A01D7E64BE00516D3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC4B09F1D7E64BE00516D3E /* main.m */; };
 		2CC4B0A31D7E64BE00516D3E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC4B0A21D7E64BE00516D3E /* AppDelegate.m */; };
-		2CC4B0A61D7E64BE00516D3E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC4B0A51D7E64BE00516D3E /* ViewController.m */; };
+		2CC4B0A61D7E64BE00516D3E /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC4B0A51D7E64BE00516D3E /* WebViewController.m */; };
 		2CC4B0A91D7E64BE00516D3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC4B0A71D7E64BE00516D3E /* Main.storyboard */; };
 		2CC4B0AB1D7E64BE00516D3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CC4B0AA1D7E64BE00516D3E /* Assets.xcassets */; };
 		2CC4B0AE1D7E64BE00516D3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC4B0AC1D7E64BE00516D3E /* LaunchScreen.storyboard */; };
+		2CC4B0BD1D7E6DC500516D3E /* ImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC4B0BC1D7E6DC500516D3E /* ImageInfo.m */; };
+		2CC4B0C11D7E705200516D3E /* ImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC4B0C01D7E705200516D3E /* ImageManager.m */; };
+		2CC4B0CC1D7E737100516D3E /* ImageListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC4B0CB1D7E737100516D3E /* ImageListViewController.m */; };
+		2CC4B0CF1D7E7AB400516D3E /* ImageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC4B0CE1D7E7AB400516D3E /* ImageDetailViewController.m */; };
+		3E8BF89D0A7CF5168FACC93D /* libPods-ImageGrabber2016.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7ED0325DA65B7CCFEB0966F /* libPods-ImageGrabber2016.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03BC477DA9B757110F54540B /* Pods-ImageGrabber2016.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGrabber2016.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageGrabber2016/Pods-ImageGrabber2016.release.xcconfig"; sourceTree = "<group>"; };
 		2CC4B09B1D7E64BE00516D3E /* ImageGrabber2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageGrabber2016.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC4B09F1D7E64BE00516D3E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2CC4B0A11D7E64BE00516D3E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2CC4B0A21D7E64BE00516D3E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2CC4B0A41D7E64BE00516D3E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2CC4B0A51D7E64BE00516D3E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2CC4B0A41D7E64BE00516D3E /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		2CC4B0A51D7E64BE00516D3E /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		2CC4B0A81D7E64BE00516D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CC4B0AA1D7E64BE00516D3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CC4B0AD1D7E64BE00516D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CC4B0AF1D7E64BE00516D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CC4B0BB1D7E6DC500516D3E /* ImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageInfo.h; sourceTree = "<group>"; };
+		2CC4B0BC1D7E6DC500516D3E /* ImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageInfo.m; sourceTree = "<group>"; };
+		2CC4B0BE1D7E6EFE00516D3E /* ImageGrabber2016-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ImageGrabber2016-prefix.pch"; path = "ImageGrabber2016/ImageGrabber2016-prefix.pch"; sourceTree = "<group>"; };
+		2CC4B0BF1D7E705200516D3E /* ImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageManager.h; sourceTree = "<group>"; };
+		2CC4B0C01D7E705200516D3E /* ImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageManager.m; sourceTree = "<group>"; };
+		2CC4B0CA1D7E737100516D3E /* ImageListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageListViewController.h; sourceTree = "<group>"; };
+		2CC4B0CB1D7E737100516D3E /* ImageListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageListViewController.m; sourceTree = "<group>"; };
+		2CC4B0CD1D7E7AB400516D3E /* ImageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDetailViewController.h; sourceTree = "<group>"; };
+		2CC4B0CE1D7E7AB400516D3E /* ImageDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDetailViewController.m; sourceTree = "<group>"; };
+		B9DB20C5546070A88DBF18C9 /* Pods-ImageGrabber2016.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGrabber2016.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageGrabber2016/Pods-ImageGrabber2016.debug.xcconfig"; sourceTree = "<group>"; };
+		E7ED0325DA65B7CCFEB0966F /* libPods-ImageGrabber2016.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ImageGrabber2016.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +50,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E8BF89D0A7CF5168FACC93D /* libPods-ImageGrabber2016.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24C0CE2A07D5D48A0695C3AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9DB20C5546070A88DBF18C9 /* Pods-ImageGrabber2016.debug.xcconfig */,
+				03BC477DA9B757110F54540B /* Pods-ImageGrabber2016.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2CC4B0921D7E64BE00516D3E = {
 			isa = PBXGroup;
 			children = (
 				2CC4B09D1D7E64BE00516D3E /* ImageGrabber2016 */,
+				2CC4B0BE1D7E6EFE00516D3E /* ImageGrabber2016-prefix.pch */,
 				2CC4B09C1D7E64BE00516D3E /* Products */,
+				24C0CE2A07D5D48A0695C3AE /* Pods */,
+				EC3A8C85CC8B1056D9C69595 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +90,16 @@
 			children = (
 				2CC4B0A11D7E64BE00516D3E /* AppDelegate.h */,
 				2CC4B0A21D7E64BE00516D3E /* AppDelegate.m */,
-				2CC4B0A41D7E64BE00516D3E /* ViewController.h */,
-				2CC4B0A51D7E64BE00516D3E /* ViewController.m */,
+				2CC4B0BB1D7E6DC500516D3E /* ImageInfo.h */,
+				2CC4B0BC1D7E6DC500516D3E /* ImageInfo.m */,
+				2CC4B0BF1D7E705200516D3E /* ImageManager.h */,
+				2CC4B0C01D7E705200516D3E /* ImageManager.m */,
+				2CC4B0A41D7E64BE00516D3E /* WebViewController.h */,
+				2CC4B0A51D7E64BE00516D3E /* WebViewController.m */,
+				2CC4B0CA1D7E737100516D3E /* ImageListViewController.h */,
+				2CC4B0CB1D7E737100516D3E /* ImageListViewController.m */,
+				2CC4B0CD1D7E7AB400516D3E /* ImageDetailViewController.h */,
+				2CC4B0CE1D7E7AB400516D3E /* ImageDetailViewController.m */,
 				2CC4B0A71D7E64BE00516D3E /* Main.storyboard */,
 				2CC4B0AA1D7E64BE00516D3E /* Assets.xcassets */,
 				2CC4B0AC1D7E64BE00516D3E /* LaunchScreen.storyboard */,
@@ -79,6 +117,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EC3A8C85CC8B1056D9C69595 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7ED0325DA65B7CCFEB0966F /* libPods-ImageGrabber2016.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +132,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CC4B0B21D7E64BE00516D3E /* Build configuration list for PBXNativeTarget "ImageGrabber2016" */;
 			buildPhases = (
+				CD6FD8B4D3889B326673680B /* [CP] Check Pods Manifest.lock */,
 				2CC4B0971D7E64BE00516D3E /* Sources */,
 				2CC4B0981D7E64BE00516D3E /* Frameworks */,
 				2CC4B0991D7E64BE00516D3E /* Resources */,
+				C723F25F1DB006AC9386169A /* [CP] Embed Pods Frameworks */,
+				82D1F6D72876D92DDD3EC0EF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,13 +193,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		82D1F6D72876D92DDD3EC0EF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImageGrabber2016/Pods-ImageGrabber2016-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C723F25F1DB006AC9386169A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImageGrabber2016/Pods-ImageGrabber2016-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD6FD8B4D3889B326673680B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2CC4B0971D7E64BE00516D3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CC4B0A61D7E64BE00516D3E /* ViewController.m in Sources */,
+				2CC4B0CC1D7E737100516D3E /* ImageListViewController.m in Sources */,
+				2CC4B0A61D7E64BE00516D3E /* WebViewController.m in Sources */,
+				2CC4B0BD1D7E6DC500516D3E /* ImageInfo.m in Sources */,
+				2CC4B0C11D7E705200516D3E /* ImageManager.m in Sources */,
 				2CC4B0A31D7E64BE00516D3E /* AppDelegate.m in Sources */,
+				2CC4B0CF1D7E7AB400516D3E /* ImageDetailViewController.m in Sources */,
 				2CC4B0A01D7E64BE00516D3E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,8 +362,11 @@
 		};
 		2CC4B0B31D7E64BE00516D3E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9DB20C5546070A88DBF18C9 /* Pods-ImageGrabber2016.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ImageGrabber2016/ImageGrabber2016-prefix.pch";
 				INFOPLIST_FILE = ImageGrabber2016/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.situationexcellent.ImageGrabber2016;
@@ -272,8 +376,11 @@
 		};
 		2CC4B0B41D7E64BE00516D3E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03BC477DA9B757110F54540B /* Pods-ImageGrabber2016.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ImageGrabber2016/ImageGrabber2016-prefix.pch";
 				INFOPLIST_FILE = ImageGrabber2016/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.situationexcellent.ImageGrabber2016;
@@ -300,6 +407,7 @@
 				2CC4B0B41D7E64BE00516D3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
