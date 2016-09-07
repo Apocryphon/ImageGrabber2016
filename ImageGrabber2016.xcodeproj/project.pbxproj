@@ -367,7 +367,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ImageGrabber2016/ImageGrabber2016-prefix.pch";
-				INFOPLIST_FILE = ImageGrabber2016/Info.plist;
+				INFOPLIST_FILE = "ImageGrabber2016/ImageGrabber2016-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.situationexcellent.ImageGrabber2016;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -381,7 +381,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ImageGrabber2016/ImageGrabber2016-prefix.pch";
-				INFOPLIST_FILE = ImageGrabber2016/Info.plist;
+				INFOPLIST_FILE = "ImageGrabber2016/ImageGrabber2016-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.situationexcellent.ImageGrabber2016;
 				PRODUCT_NAME = "$(TARGET_NAME)";

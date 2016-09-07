@@ -7,4 +7,5 @@ target 'ImageGrabber2016' do
 
   # Pods for ImageGrabber2016
   pod 'SSZipArchive', '~> 1.5'
+  pod 'AFNetworking', '~> 3.0'
 end

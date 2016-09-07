@@ -10,19 +10,34 @@
 //
 
 #import "ImageInfo.h"
+#import "AFURLSessionManager.h"
 
 @implementation ImageInfo
 
 - (void)getImage {
     NSLog(@"Getting %@...", self.sourceURL);
+
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     
-    NSData *data = [NSData dataWithContentsOfURL:self.sourceURL];   // blocking approach
-    if (!data) {
-        NSLog(@"Error retrieving %@", self.sourceURL);
-        return;
-    }
+    NSURLRequest *request = [NSURLRequest requestWithURL:self.sourceURL];
     
-    self.image = [[UIImage alloc] initWithData:data];
+    NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
+        if (error) {
+            NSLog(@"Error downloading image: %@", error.localizedDescription);
+
+        } else {
+            NSLog(@"%@ %@", response, responseObject);
+            NSLog(@"Image downloaded.");
+            self.image = [[UIImage alloc] initWithData:responseObject];
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"net.situationexcell.imagegrabber2016.imageupdated"
+                                                                object:self];
+            
+        }
+    }];
+    [dataTask resume];
+
 }
 
 - (id)initWithSourceURL:(NSURL *)url {

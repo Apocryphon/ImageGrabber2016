@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ImageGrabber2016.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5154EBA367F1E1834BE5FDE40FE8E164</key>
+		<key>236AA291CDAC96872E36BE9FCFDCD726</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6064EDB8D5E7A4B88531BC934863FF44</key>
+		<key>55854E4730BC04D86F6F877E7393B134</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>928353533005A4198EBDA5B700D37B64</key>
 		<dict>
 			<key>primary</key>
 			<true/>

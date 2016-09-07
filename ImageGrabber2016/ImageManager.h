@@ -10,6 +10,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <dispatch/dispatch.h>
 
 @protocol ImageManagerDelegate <NSObject>
 - (void)imageInfosAvailable:(NSArray *)imageInfos done:(BOOL)done;
@@ -21,6 +22,7 @@
 
 @property (nonatomic, strong) NSString *html;
 @property (nonatomic, weak) id<ImageManagerDelegate> delegate;
+@property (nonatomic, strong) dispatch_queue_t backgroundQueue;
 
 - (id)initWithHTML:(NSString *)html delegate:(id<ImageManagerDelegate>)imgDelegate;
 - (void)process;

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '6064EDB8D5E7A4B88531BC934863FF44'
+               BlueprintIdentifier = '236AA291CDAC96872E36BE9FCFDCD726'
                BlueprintName = 'Pods-ImageGrabber2016'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-ImageGrabber2016.a'>

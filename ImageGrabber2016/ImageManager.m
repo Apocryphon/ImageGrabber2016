@@ -12,6 +12,7 @@
 #import "ImageManager.h"
 #import "ImageInfo.h"
 #import "ZipArchive.h"
+#import "AFURLSessionManager.h"
 
 @implementation ImageManager
 
@@ -61,22 +62,34 @@
     
     pendingZips--;
     
-    [self.delegate imageInfosAvailable:imageInfos done:(pendingZips==0)];
-    
+    dispatch_async(dispatch_get_main_queue(), ^(void) {
+        [self.delegate imageInfosAvailable:imageInfos done:(pendingZips==0)];
+    });    
 }
 
 - (void)retrieveZip:(NSURL *)sourceURL {
     
     NSLog(@"Getting %@...", sourceURL);
     
-    NSData * data = [NSData dataWithContentsOfURL:sourceURL];
-    if (!data) {
-        NSLog(@"Error retrieving %@", sourceURL);
-        return;
-    }
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     
-    [self processZip:data sourceURL:sourceURL];
+    NSURLRequest *request = [NSURLRequest requestWithURL:sourceURL];
     
+    NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
+        if (error) {
+            NSLog(@"Error downloading zip file: %@", error.localizedDescription);
+        } else {
+            NSLog(@"Zip file downloaded.");
+            NSData *data = responseObject;
+            dispatch_async(self.backgroundQueue, ^(void){
+                [self processZip:data sourceURL:sourceURL];
+            });
+        }
+    }];
+    [dataTask resume];
+
 }
 
 - (void)processHtml {
@@ -125,16 +138,19 @@
         }
     }
     
-    // Notify delegate in main thread that new image infos
-    // available
-    [self.delegate imageInfosAvailable:imageInfos done:(pendingZips==0)];
+    // Notify delegate in main thread that new image infos available
+    dispatch_async(dispatch_get_main_queue(), ^(void) {
+        [self.delegate imageInfosAvailable:imageInfos done:(pendingZips==0)];
+    });
     
 }
 
 - (void)process {
-    
-    [self processHtml];
-    
+
+    dispatch_async(self.backgroundQueue, ^(void) {
+        [self processHtml];
+    });
+
 }
 
 - (id)initWithHTML:(NSString *)html delegate:(id<ImageManagerDelegate>)imgDelegate {
@@ -143,6 +159,7 @@
         self.html = html;
         self.delegate = imgDelegate;
     }
+    self.backgroundQueue = dispatch_queue_create("net.situationexcell.imagegrabber2016.bgqueue", NULL);
     return self;
 }
 

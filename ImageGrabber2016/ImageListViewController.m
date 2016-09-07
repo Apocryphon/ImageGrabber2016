@@ -47,6 +47,22 @@
     self.imageInfos = [[NSMutableArray alloc] init];
     self.imageManager = [[ImageManager alloc] initWithHTML:self.html delegate:self];
     [self.imageManager process];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(imageUpdated:) name:@"net.situationexcell.imagegrabber2016.imageupdated"
+                                               object:nil];
+
+}
+
+- (void)imageUpdated:(NSNotification *)notification {
+    ImageInfo *info = [notification object];
+    unsigned long row = [self.imageInfos indexOfObject:info];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:row inSection:0];
+    
+    NSLog(@"Image for row %lu updated!", row);
+    
+    [self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
+                          withRowAnimation:UITableViewRowAnimationNone];
 
 }
 
